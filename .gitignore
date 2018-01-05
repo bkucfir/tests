@@ -1,0 +1,10 @@
+# User-specific stuff:
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/tests.iml
+.idea/modules.xml
+.idea/misc.xml
+
+# Other
+__pycache__/
+*.log
