@@ -21,7 +21,7 @@ class TestCase(BaseTestCase):
         alert = self.driver.find_element_by_xpath(self.TestSettings.alert)
         alert.click()
         about_us = self.driver.find_element_by_link_text(self.TestSettings.about_us)
-        self.assertTrue("O nas" in about_us.text)
+        self.assertTrue(self.TestSettings.about_us in about_us.text)
         about_us.click()
         self.driver.find_element_by_id(self.TestSettings.change_tab).send_keys(Keys.CONTROL + Keys.TAB)
         self.driver.switch_to.window(self.driver.window_handles[1])
